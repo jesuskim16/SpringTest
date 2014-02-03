@@ -1,0 +1,8 @@
+@CHARSET "EUC-KR";
+* { margin: 0px; padding: 0px; }
+body{line-height:1.25em;color:#000;word-wrap:break-word;word-break:break-all; }
+h1,h2,h3,h4,h5,h6{font-size:12px;text-align:left}
+img, input, button, select, textarea { vertical-align:middle; }
+li{list-style:none}
+
+#slideLeft{position:absolute;left:-300px;top:0;height:100%;background:#454545;width:260px}

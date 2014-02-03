@@ -2,23 +2,53 @@
 <html>
 <head>
 <meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
 <title>Insert title here</title>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script> 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<script src="./js/slideLeft.js" ></script>
 </head>
 <body>
-<div data-role="page" >
+
+	<div data-role="content" id="slideLeft" >
+			
+	</div>
+<!-- main page start -->
+<div data-role="page" id="main">
+	
+
 	<header data-role="header" data-position="inline" >
-		<h1>Header</h1>
+	    <a href="#" data-role="button" id="menu"   >메뉴</a>	
+		<h1 class="logo" >header</h1>
 	</header>
 	<div data-role="content" >
-		<h1>Content</h1>
+		<h1>Main</h1>
+		<a href="#sub01" data-role="button" data-transition="slide" >Sub01</a>
 	</div>
 	<footer data-role="footer" data-position="fixed">
 		<h1>Footer</h1>
 	</footer>
+</div>
 
+<!--  Left slide start -->
+
+
+<!--  sub page start -->
+<div data-role="page" id="sub01">
+	<header data-role="header" data-position="inline" >
+		<a href="#main" data-rel="back" data-role="button" data-icon="arrow-l" >Back</a>
+		<h1 class="logo" >header</h1>
+		
+	</header>
+	<div data-role="content" >
+		<h1>sub01</h1>
+	</div>
+	<footer data-role="footer" data-position="fixed">
+		<h1>Footer</h1>
+	</footer>
 </div>
 
 </body>
