@@ -15,12 +15,11 @@ public class MainController {
 	
 	@RequestMapping(value = "/test" ,  method = RequestMethod.GET)
 	@ResponseBody
-	public  String mainController(){
-		
+	public ModelAndView mainController(ModelAndView model){
 		String returnValue = "Hello World!!!";
 		logger.info("{}" , returnValue);
-		
-		return returnValue;
+		model.setViewName("index");
+		return model;
 	}
 	
 }
