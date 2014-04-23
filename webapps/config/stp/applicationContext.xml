@@ -18,8 +18,8 @@
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-		p:driverClassName="com.mysql.jdbc.Driver"  p:url="jdbc:mysql://"
-		p:username="" p:password="" />
+		p:driverClassName="com.mysql.jdbc.Driver"  p:url="jdbc:mysql://localhost:3521/fishdb"
+		p:username="root" p:password="dmsrud83" />
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
 		p:configLocation="/WEB-INF/mybatis-config.xml" p:dataSource-ref="dataSource" />
 
