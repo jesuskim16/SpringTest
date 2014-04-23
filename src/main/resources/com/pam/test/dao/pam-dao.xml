@@ -3,5 +3,14 @@
 
 <mapper namespace="SPRING_TEST">
 
+	<select id="test" resultType="String">
+	SELECT 1
+	FROM dual
+	</select>
+	
+	<select id="notice" resultType="com.pam.test.board.notice.vo.NoticeVO">
+	SELECT seq  ,name  ,title  ,content  ,date  ,readnum  ,ip
+	FROM board
+	</select>
 	
 </mapper>
